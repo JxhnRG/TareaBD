@@ -1,6 +1,6 @@
 # TareaBD
 ##Primer MER
-´´´
+```
 --employee table
 CREATE TABLE employee(
 	eid INTEGER PRIMARY KEY,
@@ -45,9 +45,9 @@ CREATE TABLE employeeRole(
 	FOREIGN KEY (eid) REFERENCES employee(eid),
 	FOREIGN KEY (rid) REFERENCES role(rid)
 );
-´´´
+```
 ##Segundo MER
-´´´
+```
 -- publisher table 
 CREATE TABLE publisher(
 	name VARCHAR(200) PRIMARY KEY,
@@ -100,4 +100,4 @@ CREATE TABLE loans(
  	FOREIGN KEY (brid) REFERENCES branch(brid),
 	FOREIGN KEY (cid) REFERENCES borrower(cid)
 );
-´´´
+```
